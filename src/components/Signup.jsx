@@ -29,7 +29,7 @@ function Signup() {
     setError("");
     try {
       const { data } = await axios.post(
-        "http://localhost:4002/api/v1/user/signup",
+        "deepseekbackend-hpbaf4b3h6g7atgs.centralindia-01.azurewebsites.net/api/v1/user/signup",
         {
           firstName: formData.firstName,
           lastName: formData.lastName,

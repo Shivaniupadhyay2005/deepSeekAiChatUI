@@ -30,7 +30,7 @@ function Login() {
     setError("");
     try {
       const { data } = await axios.post(
-        "http://localhost:4002/api/v1/user/login",
+        "deepseekbackend-hpbaf4b3h6g7atgs.centralindia-01.azurewebsites.net/api/v1/user/login",
         {
           email: formData.email,
           password: formData.password,

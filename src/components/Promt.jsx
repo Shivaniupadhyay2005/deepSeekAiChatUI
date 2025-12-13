@@ -48,7 +48,7 @@ function Promt() {
       const token = localStorage.getItem("token");
 
       const { data } = await axios.post(
-        "http://localhost:4002/api/v1/deepseekai/promt",
+        "deepseekbackend-hpbaf4b3h6g7atgs.centralindia-01.azurewebsites.net/api/v1/deepseekai/promt",
         { content: trimmed },
         {
           headers: {
@@ -103,9 +103,8 @@ function Promt() {
         {promt.map((msg, index) => (
           <div
             key={index}
-            className={`w-full flex ${
-              msg.role === "user" ? "justify-end" : "justify-start"
-            }`}
+            className={`w-full flex ${msg.role === "user" ? "justify-end" : "justify-start"
+              }`}
           >
             {msg.role === "assistant" ? (
               // 🧠 Full-width assistant response
